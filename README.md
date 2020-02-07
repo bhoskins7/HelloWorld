@@ -25,9 +25,10 @@ exit
 exit
 ```
 
-4. Run Tomcat Server (change environment variables for your environment | APM_SERVER | APM_TOKEN | MYSQL_URL)
+4. Run Tomcat Server (change environment variables to your environment | APM_SERVER | APM_TOKEN | MYSQL_URL)
 ```
 docker run \
+  --network test \
   -e APM_SERVER="https://a1e91b2c78284ab4a97bad1de3fdfd39.apm.us-central1.gcp.cloud.es.io" \
   -e APM_TOKEN="YrixiWxca1iSYHjkOb" \
   -e MYSQL_URL="jdbc:mysql://172.18.0.2:3306/" \
