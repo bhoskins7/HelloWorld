@@ -17,11 +17,11 @@ docker inspect mysql | grep IPAddress
 `
 
 3. Configure MySQL Database
-`
+```
 docker exec -it mysql mysql -h{IPAddress} -uroot -p 
 create database demoprj; 
 use demoprj; 
 create table demo(id int(10), string varchar(20)); 
 exit
 exit
-`
+```
