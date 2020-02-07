@@ -9,6 +9,7 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
+
     @CaptureSpan
     protected static Connection initializeDatabase()
             throws SQLException, ClassNotFoundException
@@ -16,7 +17,7 @@ public class DatabaseConnection {
         // Initialize all the information regarding
         // Database Connection
         String dbDriver = "com.mysql.jdbc.Driver";
-        String dbURL = "jdbc:mysql://172.18.0.2:3306/";
+        String dbURL = System.getenv("MYSQL_URL");
         // Database name to access
         String dbName = "demoprj";
         String dbUsername = "root";
