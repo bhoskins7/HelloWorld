@@ -1,7 +1,7 @@
 # HelloWorld Elastic APM Java App
 
 ### Pre-Requirements
-1. Elastic APM Server in [Elastic Cloud](cloud.elastic.co) 
+1. Elastic APM Server in [Elastic Cloud](https://cloud.elastic.co) 
 2. Running Docker Daemon
 
 ### Instructions
